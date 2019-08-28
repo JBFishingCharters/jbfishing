@@ -1,0 +1,34 @@
+/* Contact Module */
+.section-contact {
+	
+	.bg-16x9 {
+		background-size: contain;
+	}
+	
+	.et_pb_contact p input, .et_pb_contact p textarea {
+		color: $primary-color-darkest;
+		/*background-color: $white;
+		background-color: rgba($white, .85);*/
+	}
+	
+	// Email and Phone buttons
+	.et_pb_widget_area .et_pb_widget {
+		.textwidget {
+			margin-top: rem(8px);
+		}
+		
+		a {
+			background-color: $primary-color-darker;
+			padding: rem(8px);
+			border-radius: rem(8px);
+			color: $white;
+			padding-left: rem(12px);
+			padding-right: rem(12px);
+			border: rem(1px) solid $white;
+
+			&:hover {
+				background-color: $primary-color-darkest;
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+/* Captain Module */
+.mod-captain {
+	h4 {
+		@include font-family-logo();
+	}
+}

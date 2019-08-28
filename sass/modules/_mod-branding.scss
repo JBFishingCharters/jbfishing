@@ -1,0 +1,48 @@
+/* Branding Section */
+.mod-branding {
+	&.et_pb_section {
+		background-color: #f3f3f3;
+	}
+	
+	h1 {
+		margin-bottom: rem(90px);
+	}
+	
+	.logo-preview {
+		display: block;
+		padding: rem(30px);
+		background-color: $white;
+		
+		&.inverted {
+			background-color: $primary-color;
+		}
+	}
+	
+	table {
+		
+		thead {
+			background-color: #dedede;
+		}
+		
+		th {
+			user-select: none;
+		}
+		
+		&, td {
+			border-color: $black;
+		}
+	}
+	
+	.colors {
+		.box {
+			display: block;
+			width: rem(100px);
+			height: rem(100px);
+		}
+	}
+}
+@media (max-width: 980px) {
+	.et_pb_row > .et_pb_column_1_2:first-child {
+		margin-bottom: 90px;
+	}
+}

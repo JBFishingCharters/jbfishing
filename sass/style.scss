@@ -1,0 +1,45 @@
+/*!
+Theme Name: JB Fishing Charters
+Theme URI: http://www.jbfishingcharters.com
+Template: Divi
+Author: Steve Kudirka
+Author URI: http://www.kudirka.com
+Description: Theme for JB Fishing Charters.
+Version: 1.0.0
+*/
+
+// BOURBON
+@import "bourbon";
+
+// VARIABLES
+@import "_vars";
+
+// MIXINS
+@import "_mixins";
+
+// FONTS
+@import "_fonts";
+
+// UI
+@import "_ui";
+
+// MODULES
+@import "_modules";
+
+// Mobile up to 980px
+@media (max-width: 980px) { @import "_mobile"; }
+
+// LANDSCAPE
+@media only screen and (orientation: landscape) { @import "_landscape"; }
+
+// 768px
+@media only screen and (min-width: 768px) { @import "_768"; }
+
+// 981px (Divi wraps)
+@media only screen and (min-width: 981px) { @import "_981"; }
+
+// 1300px
+@media only screen and (min-width: 1300px) { @import "_1300"; }
+
+// 1350px
+@media only screen and (min-width: 1350px) { @import "_1350"; }

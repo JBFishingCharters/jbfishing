@@ -1,0 +1,71 @@
+/* ====================
+981px AND UP (Divi wraps)
+==================== */
+
+// UI
+/*h1 {
+	font-size: rem(42px);
+}
+h2 {
+	font-size: rem(34px);
+}
+h3 {
+	font-size: rem(26px);
+}
+h4 {
+	font-size: rem(24px);
+}*/
+
+h1 {
+	font-size: rem(33px);
+}
+h2,
+.et_pb_slide_description .et_pb_slide_title {
+	font-size: rem(31px);
+}
+h3 {
+	font-size: rem(29px);
+}
+h4 {
+	font-size: rem(27px);
+}
+
+.et_pb_gutters1.et_pb_row.et_pb_row_fullwidth {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#logo,
+.et_pb_svg_logo #logo, 
+.et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo {
+	height: 36%;
+	max-height: 36%;
+}
+
+.hasBackgroundBlends.chrome {
+	@include blendModes();
+}
+
+// MODULES
+
+.et_pb_gutters1 .et_pb_column .et_pb_module.mod-intro {
+    //margin-left: auto;
+    //margin-right: auto;
+}
+
+/* Intro Module */
+.et_pb_gutters1 .mod-intro .et_pb_column .et_pb_module.mod-content {
+	//margin-bottom: rem(40px);
+}
+
+/* Intro Module */
+.mod-intro {
+	
+	.et_pb_gutters1 .mod-content {
+		margin-bottom: rem(40px);
+	}
+	
+	h1 {
+		font-size: rem(26px);
+	}
+}

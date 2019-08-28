@@ -1,0 +1,209 @@
+// BOURBON
+@import "bourbon";
+@import "fonts/jb-icons/_style";
+@import "fonts/dream-orphanage-rg-regular/_style";
+
+// Google Fonts
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Architects+Daughter|Handlee|Arima+Madurai|Kavivanar|Oswald|Bad+Script&text=Fishing%20Charters');
+
+
+$blue: #3d5776;
+$white: #fff;
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+$font-size-base : 20px;
+$em-base        : $font-size-base;
+
+html {
+    font-size: $font-size-base;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    display: inline-block;
+    -ms-interpolation-mode: bicubic;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+li {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.favicon,
+.logo {
+    display: inline-block;
+}
+$font-size-logo: rem(60px);
+.logo {
+    font-size: $font-size-logo;
+    padding: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 10px;
+    //border-right: 1px solid #989898;
+    font-family: 'DreamOrphanageRg-Regular';
+    
+    .jb-icon-logo {
+        //font-size: rem(74px);
+        //font-size: rem(48px);
+        font-size: rem(90px);
+    }
+}
+.favicon {
+    padding-left: 40px;
+}
+.style1 {
+    .logo {
+        color: $blue;
+        
+        .jb-icon-logo {
+            background: $blue;
+            color: $white;
+            border-radius: 14px;
+            padding: 12px;
+        }
+    }
+}
+.style2 {
+    .logo {
+        color: $blue;
+    }
+}
+.style3 {
+    .logo {
+        background: $blue;
+        color: $white;
+    }
+}
+.style4 {
+    .logo {
+        color: $blue;
+        padding: 10px;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}
+.style5 {
+    .logo {
+        background: $blue;
+        color: $white;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}
+
+.style6 {
+    .logo {
+        color: $blue;
+        font-family: 'Architects Daughter', cursive;
+    }
+}
+.style7 {
+    .logo {
+        background: $blue;
+        color: $white;
+        font-family: 'Architects Daughter', cursive;
+    }
+}
+
+.style8 {
+    .logo {
+        color: $blue;
+        font-family: 'Handlee', cursive;
+    }
+}
+.style9 {
+    .logo {
+        background: $blue;
+        color: $white;
+        font-family: 'Handlee', cursive;
+    }
+}
+
+.style10 {
+    .logo {
+        color: $blue;
+        font-family: 'Arima Madurai', cursive;
+    }
+}
+.style11 {
+    .logo {
+        background: $blue;
+        color: $white;
+        font-family: 'Arima Madurai', cursive;
+    }
+}
+
+.style12 {
+    .logo {
+        color: $blue;
+        font-family: 'Kavivanar', cursive;
+    }
+}
+.style13 {
+    .logo {
+        background: $blue;
+        color: $white;
+        font-family: 'Kavivanar', cursive;
+    }
+}
+
+.style14 {
+    .logo {
+        color: $blue;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+.style15 {
+    .logo {
+        background: $blue;
+        color: $white;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+
+.style16 {
+    .logo {
+        color: $blue;
+        font-family: 'Bad Script', cursive;
+    }
+}
+.style17 {
+    .logo {
+        background: $blue;
+        color: $white;
+        font-family: 'Bad Script', cursive;
+    }
+}
+
+// before 768px
+@media only screen and (max-device-width: 767px) {
+    
+    $font-size-base : 28px;
+    
+    html {
+       font-size: $font-size-base;
+    }
+}

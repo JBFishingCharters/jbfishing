@@ -1,0 +1,14 @@
+/* ====================
+1300px AND UP
+==================== */
+
+#logo,
+.et_pb_svg_logo #logo, 
+.et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo {
+	height: 60%;
+	max-height: 60%;
+}
+
+.et_pb_section_parallax>.et_pb_row_fullwidth>.et_pb_column {
+	margin-bottom: rem(30px);
+}

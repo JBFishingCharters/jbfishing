@@ -1,0 +1,8 @@
+$font-path  : "fonts/";
+
+@font-face {
+  font-family: 'DreamOrphanageRg-Regular';
+  src: url($font-path + 'DreamOrphanageRg-Regular.eot?#iefix') format('embedded-opentype'),  url($font-path + 'DreamOrphanageRg-Regular.woff') format('woff'), url($font-path + 'DreamOrphanageRg-Regular.ttf')  format('truetype'), url($font-path + 'DreamOrphanageRg-Regular.svg#DreamOrphanageRg-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

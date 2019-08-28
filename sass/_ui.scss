@@ -1,0 +1,298 @@
+/* ====================
+UI
+==================== */
+
+h1 {
+	font-size: rem(33px);
+}
+h2,
+.et_pb_slide_description .et_pb_slide_title {
+	font-size: rem(32px);
+}
+h3 {
+	font-size: rem(30px);
+}
+h4 {
+	font-size: rem(26px);
+}
+
+#main-header {
+	background: $white;
+}
+
+a,
+#top-menu a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+#et_top_search,
+#left-area .post-meta a,
+.et_mobile_menu li a,
+.et_pb_widget a,
+.et_pb_widget_area .et_pb_widget a,
+.et_pb_bg_layout_light .et_pb_widget li a,
+.form-submit .et_pb_button,
+.mobile_menu_bar:before, 
+.mobile_menu_bar:after,
+.et_pb_slide_content,
+.et_pb_sum, .et_pb_pricing li a, .et_pb_pricing_table_button, .et_overlay:before, .et_pb_member_social_links a:hover, .woocommerce-page #content input.button:hover .et_pb_widget li a:hover, .et_pb_bg_layout_light .et_pb_promo_button, .et_pb_bg_layout_light.et_pb_module.et_pb_button, .et_pb_bg_layout_light .et_pb_more_button, .et_pb_filterable_portfolio .et_pb_portfolio_filters li a.active, .et_pb_filterable_portfolio .et_pb_portofolio_pagination ul li a.active, .et_pb_gallery .et_pb_gallery_pagination ul li a.active, .et_pb_contact_submit, .et_pb_bg_layout_light .et_pb_newsletter_button {
+	color: $primary-color;
+}
+
+a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+#left-area .post-meta a,
+.et_pb_widget a,
+.et_pb_widget_area .et_pb_widget a,
+.et_pb_bg_layout_light .et_pb_widget li a {
+	&:hover {
+		color: $primary-color-lighter;
+	}
+}
+
+#top-menu li.current-menu-item > a {
+	color: $primary-color-lightest;
+}
+
+.et_pb_posts .et_pb_post {
+	background-color: $gray-light;
+	padding: rem(30px);
+	border-radius: 4px;
+	
+	h2 {
+		margin-top: 0;
+	}
+}
+
+.et_pb_posts a.more-link {
+	color: $complement-color;
+	
+	&:hover {
+		color: $complement-color-lighter;
+	}
+}
+
+.inverted,
+#top-header, #et-secondary-nav li ul,
+.et_pb_button.dark {
+	background-color: $primary-color;
+	color: $white;
+}
+
+.bg-white {
+	background-color: $white;
+}
+
+// Footer
+#main-footer {
+	background-color: $primary-color;
+	color: $primary-color-darker;
+	
+	.footer-widget h4 {
+		color: $primary-color-lightest;
+	}
+	
+	.et_pb_widget .tagcloud a {
+		background-color: $primary-color-darker;
+    	color: $white;
+		
+		&:hover {
+			background-color: $primary-color-darkest;
+		}
+	}
+}
+#footer-bottom {
+	background-color: $primary-color-darkest;
+	
+	a,
+	.et-social-icon a {
+		color: $primary-color-lighter;
+		
+		&:hover {
+			color: $white;
+			opacity: 1;
+		}
+	}
+}
+#footer-info {
+	color: $primary-color-lighter;
+}
+
+.et_pb_button.dark,
+.screen .et_pb_button, .screen-bg .et_pb_button {
+	border-color: $white;
+	color: $white;
+	
+	&:hover {
+		background-color: $primary-color-darker;
+		border-color: $white;
+	}
+}
+
+.et_pb_counter_amount,
+.et_pb_featured_table .et_pb_pricing_heading,
+.et_quote_content,
+.et_link_content,
+.et_audio_content {
+	background-color: $primary-color;
+}
+
+.et_pb_widget_area_left {
+	border-right: none;
+}
+
+#et-info {
+	width: 100%;
+	
+	.et-info-email-link {
+		float: right;
+		display: none;
+	}
+}
+
+#logo,
+.et_pb_svg_logo #logo, 
+.et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo {
+	height: 60%;
+	max-height: 60%;
+}
+
+.et_pb_button,
+.et-search-form, .nav li ul, .et_mobile_menu, .footer-widget li:before, blockquote {
+    border-color: $primary-color;
+}
+
+.et_parallax_bg {
+	//background-position: center center;
+}
+
+.bg-16x9,
+.et_pb_section_parallax > .et_pb_row_fullwidth > .et_pb_column,
+.bg-16x9.et_pb_slider .et_pb_slide {
+	min-height: 56.25vw;
+}
+
+.bg-4x3,
+.bg-4x3.et_pb_slider .et_pb_slide {
+	min-height: 75vw;
+}
+
+.bg-16x9,
+.bg-4x3 {
+	background-repeat: no-repeat;
+}
+
+.screen, .screen-bg {
+	//background: $screen-color;
+	text-shadow: 1px 1px 1px rgba($black, .25);
+	
+	&, h1, h2, h3, h4, h5, h6,
+	.et_pb_slide_content {
+		color: $white;
+		//color: $primary-color;
+	}
+	
+	.et_pb_button {
+		background: $primary-color-slight-alpha;
+		text-shadow: none;
+	}
+	
+}
+
+.screen-bg,
+.et_pb_section_parallax.screen > .et_parallax_bg {
+	background-color: $primary-color !important;
+}
+.hasBackgroundBlends:not(.chrome) {
+	@include blendModes();
+}
+
+.screen .et_pb_post_slider.et_pb_bg_layout_light,
+.screen .et_pb_post_slider.et_pb_bg_layout_dark {
+	background: none;
+}
+
+// Lazy-loading
+.et_pb_section_parallax:not(.no-lazy) > .et_parallax_bg {
+	@include transition(background-image .75s ease-in-out);
+}
+.et_pb_section_parallax:not(.no-lazy) > .et_parallax_bg:not(.lazy-loaded) {
+	background-image: url(images/transparent.png) !important;
+}
+
+// Hide Visually, but not from Screen Readers
+.show-for-sr {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    border: 0;
+}
+
+
+// JB Logo in background
+.logo-bg {
+	background-image: url(images/logo_bg.svg);
+    background-size: contain;
+    background-position: 90% 100%;
+	background-repeat: no-repeat;
+	//background-origin: content-box;
+}
+
+// Tables
+.table-wrapper {
+	width: 100%;
+	overflow-x: auto;
+}
+
+
+// Home page
+.home.page {
+	#logo {
+		opacity: 0;
+	}
+	
+	&.show-logo #logo,
+	&.mobile-menu-open #logo{
+		opacity: 1;
+	}
+}
+
+// hide press posts
+.category-press {
+	h1.entry-title {
+		margin-bottom: rem(14px);
+	}
+	.post-meta {
+		display: none;
+	}
+}
+
+.et_pb_pricing.no-description {
+	.et_pb_pricing_content_top {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+	.et_pb_pricing_content {
+		display: none;
+	}
+}
+
+// stop scrolling on mobile for gallery when zoom'd in
+body.et_mobile_device.mfp-zoom-out-cur {
+	height: 100%;
+    overflow: hidden;
+}

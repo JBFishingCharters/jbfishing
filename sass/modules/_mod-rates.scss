@@ -1,0 +1,21 @@
+/* Rates Module */
+.mod-rates {
+	
+}
+// 768px - 980px
+@media (min-width: 768px) and (max-width: 980px) {
+	
+	.mod-rates {
+		.et_pb_pricing_table {
+			margin-bottom: rem(30px);
+		}
+		
+		.et_pb_column_2_3 .et_pb_pricing_table.et_pb_featured_table:nth-child(n+3) {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			float: none;
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+/* ====================
+MODULES
+==================== */
+.mod {
+	
+    
+	&.et_pb_section .et_pb_row {
+		//max-width: 70% !important;
+	}
+	
+	.mod-content {
+		
+	}
+}
+
+@import "modules/mod-intro";
+@import "modules/mod-captain";
+@import "modules/mod-contact";
+@import "modules/mod-branding";
+@import "modules/mod-rates";

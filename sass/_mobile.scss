@@ -1,0 +1,66 @@
+/* ====================
+MOBILE  ONLY < 981px
+==================== */
+
+.et_non_fixed_nav.et_transparent_nav #main-header,
+.et_non_fixed_nav.et_transparent_nav #top-header,
+.et_non_fixed_nav.et_transparent_nav #wpadminbar,
+.et_fixed_nav #main-header,
+.et_fixed_nav #top-header,
+.et_fixed_nav #wpadminbar {
+	position: fixed !important;
+}
+.et_mobile_menu {
+	overflow: scroll !important;
+	max-height: 83vh;
+}
+#et-top-navigation {
+	$pad-percent: (243*100vw) / 375;
+	padding-left: $pad-percent !important;
+}
+$mobile-nav-padding: 12px;
+.et_header_style_left .et-fixed-header #et-top-navigation,
+.et_header_style_left #et-top-navigation {
+	padding-top: rem($mobile-nav-padding);
+}
+.et_header_style_split .mobile_menu_bar,
+.et_header_style_left .mobile_menu_bar {
+	padding-bottom: rem($mobile-nav-padding);
+}
+.et_header_style_left #logo {
+	max-width: 71%;
+}
+.et_header_style_left .et-search-form {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+// search header 
+.et-search-form input {
+	background: $white;
+	left: 0;
+	right: auto;
+}
+.page .et_pb_section {
+	padding-top: rem(20px);
+}
+.show-empty .et_pb_column.et_pb_column_empty {
+    display: block;
+}
+// home page 
+.home.page {
+	#main-header,
+	#logo {
+		@include transition(all 0.4s ease-in-out);
+	}
+	#et-main-area {
+		margin-top: -56px;
+	}
+	#main-header {
+		background-color: rgba($white, 0);
+		@include box-shadow(none);
+	}
+	&.show-logo #main-header {
+		background-color: $white;
+		@include box-shadow(0 1px 0 rgba(0, 0, 0, 0.1));
+	}
+}

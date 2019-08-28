@@ -1,0 +1,57 @@
+/* Intro Module */
+.mod-intro {
+	
+	//text-shadow: 1px 1px 1px rgba($black, .25);
+	
+	&, h1, h2, h3, h4, h5, h6,
+	.et_pb_slide_content {
+		color: $primary-color;
+	}
+	
+	.et_pb_button {
+		background-color: $primary-color-slight-alpha;
+		text-shadow: none;
+	}
+	
+	.et_pb_gutters1.et_pb_row.et_pb_row_fullwidth {
+		padding: rem(60px);
+	}
+	
+	.book-btn {
+		//margin-top: rem(120px) !important;
+	}
+	.mod-content {
+		margin-bottom: rem(40px);
+	}
+	
+	
+	// 768
+	// container width 648
+	// - image 270px
+	
+	.logo-image {
+		width: ((270*100%) / 648);
+		min-width: rem(200px);
+		max-width: rem(350px);
+	}
+	
+	.logo-label {
+		//width: rem(200px);
+		width: ((270*100%) / 648);
+		min-width: rem(200px);
+		max-width: rem(350px);
+	}
+}
+@media (max-width: 767px) {
+	.mod-intro {
+		.et_pb_button_module_wrapper {
+			position: absolute;
+			width: 100%;
+			bottom: rem(-29px);
+		}
+		
+		&.et_pb_section_parallax>.et_pb_row_fullwidth>.et_pb_column {
+			min-height: rem(264px);
+		}
+	}
+}

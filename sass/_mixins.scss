@@ -1,0 +1,53 @@
+// MIXINS ====================
+
+@mixin disable-mouse(){
+	pointer-events: none;
+	cursor: default;
+}
+
+@mixin box-shadow($shadow...){
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+/* Used to calculate the padding-bottom for responsive iframes, videos, etc.
+https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ */
+@mixin responsive-padding-bottom($aspectRatioWidth, $aspectRatioHeight){
+	$aspectRatioVal : ($aspectRatioHeight / $aspectRatioWidth);
+	padding-bottom: (strip-units($aspectRatioVal) * 100%);
+}
+
+/* Apply Architects Daughter's logo font */
+@mixin font-family-logo(){
+	font-family: 'Architects Daughter', cursive;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin rootPrefix($prefix){
+	@at-root #{$prefix}#{&}{@content}
+}
+
+@mixin blendModes(){
+	.screen-bg,
+	.et_pb_section_parallax.screen > .et_parallax_bg {
+		background-blend-mode: multiply;
+	}
+	.screen-bg.soft-light,
+	.et_pb_section_parallax.screen.soft-light > .et_parallax_bg {
+		background-blend-mode: soft-light;
+	}
+	.screen-bg.luminosity,
+	.et_pb_section_parallax.screen.luminosity > .et_parallax_bg {
+		background-blend-mode: luminosity;
+	}
+	.screen-bg.overlay,
+	.et_pb_section_parallax.screen.overlay > .et_parallax_bg {
+		background-blend-mode: overlay;
+	}
+	.screen-bg.darken,
+	.et_pb_section_parallax.screen.darken > .et_parallax_bg {
+		background-blend-mode: darken;
+	}
+}
