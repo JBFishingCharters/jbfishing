@@ -1,7 +1,7 @@
 <?php
-define(THEME_FILE_PATH, dirname(__FILE__));
-define(DIVI_THEME_FILE_PATH, THEME_FILE_PATH . '/../Divi');
-define(DIVI_BUILDER_URI, DIVI_THEME_FILE_PATH . '/includes/builder');
+define('THEME_FILE_PATH', dirname(__FILE__));
+define('DIVI_THEME_FILE_PATH', THEME_FILE_PATH . '/../Divi');
+define('DIVI_BUILDER_URI', DIVI_THEME_FILE_PATH . '/includes/builder');
 
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
@@ -55,7 +55,7 @@ function term_link_filter( $url, $term, $taxonomy ) {
 add_filter('term_link', 'term_link_filter', 10, 3);
 
 
-function turn_off_divi_google_font( $translated, $text, $context, $domain ) {
+/*function turn_off_divi_google_font( $translated, $text, $context, $domain ) {
     if ( 'Divi' == $domain ) {
         if ( 'on' == $text && 'Open Sans font: on or off' == $context ) {
             $translated = 'off';  // turn off
@@ -64,7 +64,7 @@ function turn_off_divi_google_font( $translated, $text, $context, $domain ) {
 
     return $translated;
 }
-add_filter( 'gettext_with_context', 'turn_off_divi_google_font', 10, 4 );
+add_filter( 'gettext_with_context', 'turn_off_divi_google_font', 10, 4 );*/
 
 // BEGIN ENQUEUE PARENT ACTION
 function jb_enqueue_scripts() {
