@@ -69,12 +69,9 @@ add_filter( 'gettext_with_context', 'turn_off_divi_google_font', 10, 4 );*/
 // BEGIN ENQUEUE PARENT ACTION
 function jb_enqueue_scripts() {
     
-    $fonts_url = jb_google_fonts_url();
-	wp_register_style( "jb_google_fonts", $fonts_url);
-    
     $parent_style = 'parent-style';
 
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css', ["jb_google_fonts"] );
+    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css', [] );
     /*wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/style.css',
         array( $parent_style ),
@@ -92,7 +89,7 @@ function jb_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'jb_enqueue_scripts' );
 // END ENQUEUE PARENT ACTION
 
-function jb_google_fonts_url() {
+/*function jb_google_fonts_url() {
 	$fonts_url = '';
 
 	$font_families = array();
@@ -103,7 +100,7 @@ function jb_google_fonts_url() {
 	$fonts_url = "https://fonts.googleapis.com/css?family=".implode( '%7C', $font_families );
 
 	return esc_url_raw($fonts_url);
-}
+}*/
 
 // Add media sizes
 function setImageSize($id, $w, $h, $crop){
